@@ -2,20 +2,20 @@ function AddTextEntry(k, v)
    Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), k, v)
 end
 
-local fivem_title = "FiveM - github.com/Nevylish"
-local map_category = "Los Santos Map"
+local fivem_title = "Gemaakt door SN-SCRIPTS"
+local map_category = "Google Maps"
 
-local game_category = "Take the plane"
-local disconnect_submenu = "Go back to the list of servers"
-local closegame_submenu = "Exit FiveM and return to desktop"
+local game_category = "Pak het vliegtuig"
+local disconnect_submenu = "Ga terug naar de server lijst"
+local closegame_submenu = "Verlaat fivem en ga naar je desktop"
 
-local info_category = "Logs"
-local statistics_category = "Statistics"
-local settings_category = "Settings"
-local gallery_category = "Gallery"
-local rockstar_editor_category = "∑ Editor"
+local info_category = "Logs" -- pas aan naar hoe je wilt
+local statistics_category = "Statistics" -- pas aan naar hoe je wilt
+local settings_category = "Settings" -- pas aan naar hoe je wilt
+local gallery_category = "Gallery" -- pas aan naar hoe je wilt
+local rockstar_editor_category = "∑ Editor" -- pas aan naar hoe je wilt
 
-local fivem_key_config_submenu = "FiveM Keys"
+local fivem_key_config_submenu = "FiveM Keys" -- pas aan naar hoe je wilt
 
 Citizen.CreateThread(function()
    AddTextEntry('FE_THDR_GTAO', fivem_title)
@@ -28,5 +28,5 @@ Citizen.CreateThread(function()
    AddTextEntry('PM_SCR_SET', settings_category)
    AddTextEntry('PM_SCR_GAL', gallery_category)
    AddTextEntry('PM_SCR_RPL', rockstar_editor_category)
-   AddTextEntry('PM_SCR_CFX', fivem_key_config_submenu) -- to check
+   AddTextEntry('PM_SCR_CFX', fivem_key_config_submenu) -- om te checkem
 end)
