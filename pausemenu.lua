@@ -2,7 +2,7 @@ function AddTextEntry(k, v)
    Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), k, v)
 end
 
-local fivem_title = "Gemaakt door SN-SCRIPTS"
+local fivem_title = "Gemaakt door APPELTJE-SCRIPTS"
 local map_category = "Google Maps"
 
 local game_category = "Pak het vliegtuig"
